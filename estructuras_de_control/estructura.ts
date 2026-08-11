@@ -30,6 +30,7 @@ if (dinero >= 1000) {
 }
 /* 
         IF-ELSE-IF
+        POR BUENAS PRACTICAS ES MEJOR ANIDAR UN MAXIMO DE 3 CONDICIONALES 
 if(condicion){
     el codigo que se ejecutara si
     la condicion es verdaera
@@ -80,6 +81,8 @@ switch (CALIFICACION) {
     default:
         // PORCION DE CODIGO EN CASO DE UN VALOR POR DEFAULT
         break;
+
+    el valor default es para los casos que esten fuera de las opciones del menu 
 } */
 
 let menu = `
@@ -118,6 +121,9 @@ switch (pedido) {
     CONDICION 
         ? CODIGO Q SE EJECUTARA SI LA CONDICION VERDADERA 
         :CODIGO Q SE EJECUTARA SI LA CONDICION FALSA
+
+        este condicional solo admite una linea x verdad y una linea x falso  se utiliza
+        normalmente en condiciones pequeñas q puedan escribirse en una sola linea :D
 */
 
 let ahorros = 1000;
