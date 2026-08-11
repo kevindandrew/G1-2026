@@ -7,18 +7,18 @@ while (condition) {
 }
 */
 
-let ventas = 0;
+/* let ventas = 0;
 while (ventas != 10) {
   ventas++;
   console.log("venta realizada");
-}
+} */
 
 /* 
     for(let indice:number=1;indice <=10 ;indice++){
         codigo q se ejecutara esa cantidad de veces
     }
 */
-for (let i = 1; i <= 10; i++) {
+/* for (let i = 1; i <= 10; i++) {
   console.log("hola funval");
 }
 let num1 = 8;
@@ -27,7 +27,7 @@ let resultado = 0;
 for (let j = 1; j <= num1; j++) {
   resultado = resultado + num2;
 }
-console.log(resultado);
+console.log(resultado); */
 /* 
     indicar los n terminos de la serie de los numeros pares
     n = 4
@@ -36,12 +36,12 @@ console.log(resultado);
     2,4,6,8,10,12,14
 */
 
-let n = 7;
+/* let n = 7;
 let par = 2;
 for (let j = 1; j <= n; j++) {
   console.log(par);
   par = par + 2;
-}
+} */
 
 /* 
     mostrar los N terminos de la serie de los numeros impares
@@ -56,3 +56,23 @@ for (let j = 1; j <= n; j++) {
     !5 = 1*2*3*4*5
     !3 = 1*2*3
 */
+/* 
+ n= 5
+ 2,2,4,4,4
+ n = 10
+ 2,2,4,4,4,4,6,6,6,6
+*/
+
+let m = 10;
+let valorInicial = 2;
+let contador = 1;
+
+for (let i = 1; i <= m; i++) {
+  console.log(valorInicial);
+  if (contador === valorInicial) {
+    contador = 1;
+    valorInicial += 2;
+  } else {
+    contador++;
+  }
+}
