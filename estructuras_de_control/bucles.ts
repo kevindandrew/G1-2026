@@ -63,7 +63,7 @@ for (let j = 1; j <= n; j++) {
  2,2,4,4,4,4,6,6,6,6
 */
 
-let m = 10;
+/* let m = 10;
 let valorInicial = 2;
 let contador = 1;
 
@@ -76,3 +76,46 @@ for (let i = 1; i <= m; i++) {
     contador++;
   }
 }
+ */
+
+let m = 15;
+let valorInicialA = 1;
+let valorInicialB = 4;
+let contadorA = 1; // hasta 2
+let contadorB = 1; // primera vuelta hasta 2 luego hasta 3 luego hasta 4
+let limite = 2;
+let swich = true;
+for (let i = 1; i <= m; i++) {
+  if (swich) {
+    if (contadorA == 2) {
+      console.log(valorInicialA);
+      contadorA = 1;
+      swich = false;
+    } else {
+      console.log(valorInicialA);
+      valorInicialA++;
+      contadorA++;
+    }
+  } else {
+    if (contadorB === limite) {
+      console.log(valorInicialB);
+      limite++;
+      contadorB = 1;
+      swich = true;
+    } else {
+      console.log(valorInicialB);
+      valorInicialB += 4;
+      contadorB++;
+    }
+  }
+}
+
+/* 
+  nuestro querido lider de JAS Mauricio Lopez quiere comprarse la PS5 
+  la cual cuesta 9500$
+  pero este lider solo pudo ahorrar la primera semana 5$
+  pero gracias al poder del diezmo cada semana el puede ahorrar el doble de la semana anterior
+  2da semana 10$
+  3era semana 20
+  Cuantas semanas debera ahorrar Mauricio para poder comprar su PS5?
+*/
