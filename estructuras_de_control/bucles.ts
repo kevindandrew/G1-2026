@@ -1,3 +1,9 @@
+/* do {
+  // ira todo el codigo q ser ejecutara dentro del bucle
+  
+} while (condition);
+  */
+
 /* 
         BUCLE WHILE
 while (condition) {
@@ -119,3 +125,7 @@ for (let i = 1; i <= m; i++) {
   3era semana 20
   Cuantas semanas debera ahorrar Mauricio para poder comprar su PS5?
 */
+
+/* ----------------------------------------- */
+
+for (let index = 1; index <= 10; index++) {}
