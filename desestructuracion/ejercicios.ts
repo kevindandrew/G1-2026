@@ -29,9 +29,9 @@ const inventario: Producto[] = [
 
 // foreach - recorrer
 
-/* inventario.forEach(function (prod: Producto): void {
+inventario.forEach(function (prod: Producto): void {
   console.log("Producto:", prod.nombre);
-}); */
+});
 
 // map  -- este si devuelve un nuevo array
 
@@ -58,8 +58,7 @@ const teclado: Producto | undefined = inventario.find(function (
 ): boolean {
   return prod.id === 7;
 });
-
-//console.log(teclado);
+console.log(teclado);
 
 // some -- Existe alguno?
 
@@ -69,7 +68,7 @@ const hayAgotados: boolean = inventario.some(function (
   return prod.stock === 0;
 });
 
-//console.log(hayAgotados);
+console.log(hayAgotados);
 
 // includes -- busqueda exacta
 
