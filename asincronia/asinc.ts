@@ -190,3 +190,8 @@ console.log("[INICIO PROGRAMA]");
 prepararCocoa();
 console.log("fin del programa");
  */
+
+/* 
+    COMO CAPTURAMOS EL ERRO EN ASYNC Y AWAIT 
+    RESPUESTA: TRY CATCH
+*/
